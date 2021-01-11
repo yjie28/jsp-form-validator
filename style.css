@@ -1,0 +1,101 @@
+html {
+  /* 
+    whenever you add padding to an element, what could happen is
+    the element might stretch the page. 
+    Say you had a page that was 100 percent of the view ports width, 
+    if padding is added, it would extend beyong 100 percent, which adds a
+    horizontal scroll bar. 
+    This prevents padding to add extra width/height to the page. 
+    */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  /* 
+    vh stands for viewport height.
+    And that is the full height of the entire window you are in. 
+    We want to always stretch our background at least the full height 
+    of the screen, even though the content isn't enough to 
+    take up the full height of the screen. 
+    */
+  min-height: 100vh;
+
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(138, 161, 182);
+}
+
+.container {
+  width: 480px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 15px;
+  /* horizontal offset, vertical offset, blur, spread, color */
+  box-shadow: 0 5px 20px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form */
+form {
+  width: 90%;
+}
+
+.form-group {
+  height: 60px;
+}
+
+label {
+  position: relative;
+  bottom: 3px;
+}
+
+input {
+  width: 100%;
+  height: 35px;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+/* input:valid {
+  border: 1px solid green;
+} */
+
+/* input:invalid {
+  border: 1px solid red;
+} */
+
+button {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(138, 161, 182);
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 5px;
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+.message-container {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 90%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
