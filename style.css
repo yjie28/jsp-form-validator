@@ -66,13 +66,13 @@ input {
   transition: all 0.3s;
 }
 
-/* input:valid {
+input:valid {
   border: 1px solid green;
-} */
+}
 
-/* input:invalid {
+input:invalid {
   border: 1px solid red;
-} */
+}
 
 button {
   cursor: pointer;
